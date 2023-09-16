@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh; /* Utilisation de min-height pour s'assurer que l'arrière-plan couvre toute la hauteur de la fenêtre. */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrage vertical du contenu */
+    background: linear-gradient(135deg, rgb(219, 8, 8), rgb(2, 90, 2));
+}
+
+.div1 {
+    margin-top: 110px;
+    margin-bottom: 160px;
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 15px;
+}
+
+.div1 .titre {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.div1 .titre::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, rgb(219, 8, 8), rgb(2, 90, 2));
+}
+
+.contenu form .infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .infos .inputs {
+    margin-bottom: 15px;
+    width: calc(50% - 10px); /* Ajustement de la largeur pour éviter le débordement */
+}
+
+form .inputs label.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.infos .inputs input,
+.infos .inputs select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.infos .inputs input:focus,
+.infos .inputs select:focus {
+    border-color: #9b59b6;
+}
+
+form .bouton {
+    height: 45px;
+    margin: 35px 0;
+}
+
+form .bouton input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgb(219, 8, 8), rgb(2, 90, 2));
+}
+
+form .bouton input:hover {
+    background: linear-gradient(-135deg, rgb(219, 8, 8), rgb(2, 90, 2));
+}
