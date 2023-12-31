@@ -10,11 +10,14 @@ p{
     margin: 50px;
     color: white;
 }
+.head:hover{
+    text-decoration: underline;
+}
 a{
     color: white;
     text-decoration:  none;
 }
-.p2{
+#p4,#p3{
     color: rgb(99, 3, 3);
 }
 img{
