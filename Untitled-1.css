@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-.head{
+
+.head {
     display: inline;
     position: relative;
     bottom: 50px;
@@ -10,17 +11,22 @@
     margin: 50px;
     color: white;
 }
-.head:hover{
+
+.head:hover {
     text-decoration: underline;
 }
-a{
+
+a {
     color: white;
-    text-decoration:  none;
+    text-decoration: none;
 }
-#p4,#p3{
+
+#p4,
+#p3 {
     color: rgb(99, 3, 3);
 }
-img{
+
+img {
     height: 90px;
     position: relative;
     left: 30px;
@@ -28,21 +34,24 @@ img{
     cursor: pointer;
     background-color: rgb(99, 3, 3);
 }
-body{
+
+body {
     height: 658px;
-    background: linear-gradient(to right,rgb(99, 3, 3) 0%,rgb(99, 3, 3) 50%,rgb(211, 190, 190) 50%,rgb(211, 190, 190) 100%);
-    
+    background: linear-gradient(to right, rgb(99, 3, 3) 0%, rgb(99, 3, 3) 50%, rgb(211, 190, 190) 50%, rgb(211, 190, 190) 100%);
+
 }
-.emb{
+
+.emb {
     --imagesize: 300px;
     --transform: calc(var(--imagesize) / 2);
     perspective: 800px;
 }
+
 /*.wrapper:hover{
     transform: scale(1.5);
 }*/
-.cube{
-    transform-style:preserve-3d ;
+.cube {
+    transform-style: preserve-3d;
     position: relative;
     left: 170px;
     top: 200px;
@@ -51,10 +60,12 @@ body{
     animation: rotate 45s ease-in-out infinite;
     transform-origin: center;
 }
-.cube:hover{
+
+.cube:hover {
     animation-play-state: paused;
 }
-.cote{
+
+.cote {
     position: absolute;
     width: inherit;
     height: inherit;
@@ -63,69 +74,107 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.emb:hover .cote{
+
+.emb:hover .cote {
     opacity: 1;
 }
-.back{
+
+.back {
     transform: translateZ(-150px) rotateX(180deg);
     background-image: url(https://static.yabiladi.com/files/articles/824f9aa38a566ade46ea1eb24ce520e020220420040148.jpeg);
 }
-.left{
+
+.left {
     transform: translateX(-150px) rotateY(90deg);
     background-image: url(https://www.2022mag.com/wp-content/uploads/2022/12/walid-regragui-Maroc-Mondial-2022-1024x1024.jpg);
 }
-.right{
+
+.right {
     transform: translateX(var(--transform)) rotateY(90deg);
     background-image: url(https://pbs.twimg.com/media/FjoZ2umWYAM8dvn?format=jpg&name=900x900);
 }
-.top{
+
+.top {
     transform: translateY(-150px) rotateX(90deg);
     background-image: url(Golden\ box.jpg);
 }
-.bottom{
+
+.bottom {
     transform: translateY(var(--transform)) rotateX(270deg);
     background-image: url(https://media.licdn.com/dms/image/D4E12AQEDPukWc_JOng/article-cover_image-shrink_720_1280/0/1670790866771?e=2147483647&v=beta&t=3HukGmQWwzcDus4gui5dOdHZibN-IuCYlhC-7g4BO7Y);
 }
-.front{
+
+.front {
     transform: translateZ(var(--transform));
     background-image: url(Capture_d’écran.png);
 }
+
 @keyframes rotate {
-    0% {transform: rotateX(0);}
-    12.5%{transform: rotateY(90deg);}
-    37.5%{transform: rotateY(270deg);}
-    50%{transform: rotateY(360deg);}
-    62.5%{transform: rotateX(90deg);}
-    75%{transform: rotateX(180deg);}
-    87.5%{transform: rotateX(270deg);}
-    100%{transform: rotateX(360deg);}
+    0% {
+        transform: rotateX(0);
+    }
+
+    12.5% {
+        transform: rotateY(90deg);
+    }
+
+    37.5% {
+        transform: rotateY(270deg);
+    }
+
+    50% {
+        transform: rotateY(360deg);
+    }
+
+    62.5% {
+        transform: rotateX(90deg);
+    }
+
+    75% {
+        transform: rotateX(180deg);
+    }
+
+    87.5% {
+        transform: rotateX(270deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
 }
-.emb,#def,input{
+
+.emb,
+#def,
+input {
     display: inline-block;
     vertical-align: top;
     margin: 6px;
 }
-#def{
+
+#def {
     position: relative;
     left: 500px;
     top: 200px;
 }
-h1{
+
+h1 {
     position: relative;
     top: 50px;
     left: 180px;
     color: rgb(155, 4, 4);
-    font-family:fantasy;
+    font-family: fantasy;
     font-size: 40px;
 }
-#p{
+
+#p {
     font-size: 18px;
     color: rgb(71, 56, 56);
     position: relative;
     left: 300px;
     top: 100px;
 }
-input{
+
+input {
     position: relative;
     left: 480px;
     top: 500px;
